@@ -4,12 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <body>
-<h3>Memo</h3>
-      <p>你可以在這裡切換語言:</p>
-      <a href="memoEnglish.html">English</a>
-      <a href="#">中文</a>
-      <br>     
-     
+<h1>Memo   <button onclick="window.location.href = 'memoEnglish.html';">Ｅnglish</button>
+  <button onclick="window.location.href = '#';">中文</button>
+
+</h1>
+      
 <div id="div" class="container">
   <form action="action_page.php">
      
@@ -21,8 +20,12 @@
        <label for="To">收件者: </label><br />
       <input type="text" id="To" name="To" />
 <br />
-        <label for="DTime">日期時間: </label><br />
-      <input type="text" id="DTime" name="DTime" />
+      <label for="DTime">日期時間: </label><br />
+      <h2 id="current_year" style="position:relative;top:-80%"></h2>
+      <h2 id='current_date' style="position:relative;"></h2>
+      <h2 id="current_month" style="position:relative;"></h2>
+      <h2 id="current_week" style="position:relative;"></h2>
+      <input type="date" id="bday">
 <br />
         <label for="Msg">信息: </label><br />
       <textarea id="Msg" name="Msg" placeholder="寫點什麼.."  style="height:200px" ></textarea>
